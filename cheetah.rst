@@ -2,15 +2,15 @@
 PMC Checking Tool (CheeTah)
 ===========================
 
-PMC Checking Tool (CheeTah) is designed to simplify and speed up checking of the articles for PMC.
+PMC Checking Tool (CheeTah) is designed to simplify and speed up checking of the articles for PMC process.
 
-The goal of the tool is to mark up everything which is correct and attempt to point at incorrect entries.
+The goal of the tool is to mark up everything which is correct and attempt to pin point incorrect entries.
 Generally everything marked in Green is OK and EVERYTHING ELSE needs to be checked manually. Even though tool marks certain entries in Amber or Blue, it does not mean that those are the only issues of the paper. There can be others not found by the tool. Those should be checked manually.
 
 .. NOTE::
 	
-	Even though every attempt is made to make sure that only valid entries are marked in green, occasionally tool may fail to identify wrong entries and will mark them green.
-	If you notice such case, please report them to Lisa via email.
+	Even though every attempt is made to make sure that only valid entries are marked in green, occasionally tool may fail to identify wrong entries and mark them green.
+	If you notice such cases, please report them to Lisa via email.
 
 Download
 --------
@@ -32,7 +32,7 @@ CheeTah tool interface is depicted below.
 You can use CheeTah to navigate to pii HTML page directly. No more copy/paste in the URL of other article and clicking on "HTML". 
 You just need to paste pii in "Enter PII here" field and press "Go". Article will open in a new tab.
 
-Once you have article page on your screen you can run the check by pressing "Run" button.
+Once you have article page on your screen you can run the check by pressing "Run" button. |br|
 If you need to get back to the "normal" page view, click on "Refresh" button in Chrome.
 
 
@@ -44,61 +44,61 @@ Functionality
 
 Green = OK |br|
 Amber = likely an issue - check manually |br|
-Blue = tool was not able to parse this entry - check manually |br|
+Blue = CheeTah was not able to parse this entry - check manually |br|
 
 In references: |br|
-Red = tool was not able to count number of authors in the reference - check manually |br|
-Yellow = attempt to find and mark titles of in-house journals
+Red = CheeTah was not able to count number of authors in the reference - check manually |br|
+Yellow = CheeTah attempted to find and mark titles of in-house journals
 
 
-Tool is cheeking different parts of the paper in accordance with PMC Standards. Information about each section you can find below.
+CheeTah is cheeking different parts of the paper in accordance with PMC Standards. Information about each section you can find below.
 
 1. Article Title
-	Tool checks spelling and underlines (red dashed line) suspicious words
+	CheeTah checks spelling and underlines (red dashed line) suspicious words.
 
 2. Affiliations
-	Tool checks spelling and underlines (red dashed line) suspicious words
+	CheeTah checks spelling and underlines (red dashed line) suspicious words.
 
 3. Correspondence to:
-	Tool tries to match name(s) of author(s) in "Correspondence to:" section with list of authors in front matter. 
-	If tool finds matching names, it highlights them in green, otherwise it highlights name(s) in amber
+	CheeTah tries to match name(s) of author(s) in "Correspondence to:" section with list of authors in front matter. 
+	If tool finds matching names, it highlights them in green, otherwise it highlights name(s) in amber.
 
 4. Keywords
-	Tool cheeks number of keywords in "Keywords" section.
-	If number equals or is smaller than 5, it injects a message in dark blue "number of keywords is OK"
+	CheeTah checks number of keywords in "Keywords" section.
+	If number equals or is smaller than 5, it injects a message in dark blue - "number of keywords is OK".
 	Otherwise, it injects error message trying to provide details about the issue.
 
-	Tool also checks whether article has "Special Section" keywords (in this case it caters for 5 words + special sections words)
+	CheeTah also checks whether article has "Special Section" keywords (in this case it caters for 5 words + special sections words)
 
 5. Received, Accepted, Published dates
-	Tool checks the spelling and validates the date
-	If date is correct, it marks it in green. Otherwise it highlights it in amber
+	CheeTah checks the spelling and validates the dates.
+	If date is correct, it marks it in green. Otherwise it highlights it in amber.
 
 	It also checks whether Received date is smaller than Accepted date and Accepted date is smaller than Published date.
 	If everything is correct, dates are marked in green. Otherwise in amber.
 
-6. Call outs vs references
-	Tool tries to match callouts with references.
+6. Callouts vs references
+	CheeTah tries to match callouts with references.
 	If there is a full match, the tool injects a message that number of missing callouts and references equals to zero.
 	Otherwise, it injects a message with numbers of missed callouts and/or references.
 
 7. References
-	Tool checks "Author List" for all references (both of in-house and other journals).
+	CheeTah checks "Author List" for all references (both of in-house and other journals).
 
-	If tool is able to find and validate all names of authors then it marks full author list in green.
-	If tool finds an issue in author name(s) it marks that name(s) in amber.
+	If CheeTah is able to find and validate all names of authors then it marks full author list in green.
+	If CheeTah finds an issue in author name(s) it marks that name(s) in amber.
 
-	If tool is able to count names of authors and verify that number is OK, then it marks **reference number** in green.
-	If tool is not able to count names of authors, then it marks **reference number** in red
+	If CheeTah is able to count names of authors and verify that that number is OK, then it marks **reference number** in green.
+	If CheeTah is not able to count names of authors, then it marks **reference number** in red.
 
-	Tool checks "Citation Data" for in-house journals only (Oncotarget, Aging, Gens and Cancer, Oncoscience)
-	It tries to find in-house journal name and if it finds it, it checks the format of citation data (year, volume, pages. DOI)
+	CheeTah checks "Citation Data" for in-house journals only (Oncotarget, Aging, Genes and Cancer, Oncoscience)
+	It tries to find in-house journal name and if CheeTah finds it, it checks the format of citation data (year, volume, pages. DOI)
 
-	If citation data format is OK and correct DOI is present, it marks citation data in green
-	Otherwise it does not mark citation data at all
+	If citation data format is OK and correct DOI is present, CheeTah marks citation data in green.
+	Otherwise it does not mark citation data in any color at all.
 
 	Tool also tries to match names of in-house journals. For Oncotarget and Oncosience it ties to find "ocnotarget" and "ocnoscience".
-	For Aging (Albany NY) it tries to find "aging" word. For Genes Cancer it tries to find "genes cancer, genescancer, genes&cancer, genes &cancer, genes& cancer, genes & cancer, genesandcancer, genesand cancer, genes andcancer, genes and cancer" words.
+	For Aging (Albany NY) it tries to find "aging" word. For Genes Cancer it tries to find "genes cancer, genescancer, genes&cancer, genes &cancer, genes& cancer, genes & cancer, genesandcancer, genesand cancer, genes andcancer, genes and cancer" words. The search for words is case insensitive.
 
 	If any of those words are fond in reference, tool marks them in yellow.
 
