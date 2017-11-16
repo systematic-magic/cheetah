@@ -15,7 +15,7 @@ Generally everything marked in Green is OK and EVERYTHING ELSE needs to be check
 Download
 --------
 
-You can download CheeTah :ref:`here<cheetah_download>`.
+You can download CheeTah `here`_.
 
 
 Interface
@@ -110,5 +110,5 @@ CheeTah is cheeking different parts of the paper in accordance with PMC Standard
    <br />
 
 
-.. _cheetah_download: https://chrome.google.com/webstore/detail/pmc-checking-tool-cheetah/jppbbnoakdbbbdpcheegicopijmhkbek?authuser=0
+.. _here: https://chrome.google.com/webstore/detail/pmc-checking-tool-cheetah/jppbbnoakdbbbdpcheegicopijmhkbek?authuser=0
 
