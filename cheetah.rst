@@ -29,7 +29,7 @@ CheeTah tool interface is depicted below.
    :alt: CheeTah Interface
 
 
-You can use CheeTah to navigate to pii HTML page directly. No more copy/paste in the URL of other article and clicking on "HTML"
+You can use CheeTah to navigate to pii HTML page directly. No more copy/paste in the URL of other article and clicking on "HTML". 
 You just need to paste pii in "Enter PII here" field and press "Go". Article will open in a new tab.
 
 Once you have article page on your screen you can run the check by pressing "Run" button.
@@ -105,5 +105,10 @@ Tool is cheeking different parts of the paper in accordance with PMC Standards. 
 	If you find words marked in yellow, pay close attention to the reference, as it can be incorrectly formatted reference for in-house journal.
 
 
+.. |br| raw:: html
+
+   <br />
+
 
 .. _cheetah_download: https://chrome.google.com/webstore/detail/pmc-checking-tool-cheetah/jppbbnoakdbbbdpcheegicopijmhkbek?authuser=0
+
