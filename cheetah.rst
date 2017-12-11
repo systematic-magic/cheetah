@@ -34,9 +34,9 @@ If "Open in the same tab" flag is active then CheeTah will open article in the s
 
 If you open pii pages using CheeTah, then you may like to run the check automatically when the page is loaded. To do that you can activate "Run check automatically" flag before pressing on "Go" button.
 
-If you prefer running check manually, then deactivate "Run check automatically" flag and use "Run" button to lauch the check.
+If you prefer running check manually, then deactivate "Run check automatically" flag and use "Run" button to launch the check.
 
-"Show full article text?" toggle button either hides all contents of the article (except for refereneces) or shows full article text. You can toggle this button to "Yes" or "No" any time (before or after check).
+"Show full article text?" toggle button either hides all contents of the article (except for references) or shows full article text. You can toggle this button to "Yes" or "No" any time (before or after check).
 
 If you need to get back to the "normal" (before-the-check) page view, click on "Refresh" button in Chrome.
 
@@ -61,7 +61,7 @@ CheeTah is cheeking different parts of the paper in accordance with PMC Standard
 
 2. Affiliations
 	CheeTah checks spelling and underlines (red dashed line) suspicious words.
-	The tool also cheks whether affiliation numbers match the numbers of affiliation texts. If CheeTah finds mismatch, it highlights issues in amber. In addition, if it finds any other issues (author names without afiliation numbers, wrong order of affiliation text numbers, affiliation number in wrong format and texts without affiliaton numbers), then it will promot you with the error message marked in amber.
+	The tool also checks whether affiliation numbers match the numbers of affiliation texts. If CheeTah finds mismatch, it highlights issues in amber. In addition, if it finds any other issues (author names without affiliation  numbers, wrong order of affiliation text numbers, affiliation number in wrong format and texts without affiliation numbers), then it will prompt you with the error message marked in amber.
 
 3. Correspondence to:
 	CheeTah tries to match name(s) of author(s) in "Correspondence to:" section with list of authors in front matter. 
