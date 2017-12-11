@@ -24,18 +24,22 @@ Interface
 CheeTah tool interface is depicted below.
 
 
-.. image:: /_static/cheetah_interface.png
+.. image:: /_static/cheetah_new_interface.png
    :scale: 50%
    :alt: CheeTah Interface
 
+You can use CheeTah to navigate to pii HTML page directly. No more copy/paste in the URL of other article and clicking on "HTML".
+You just need to paste pii in "Enter PII here" field and press "Go".
 
-You can use CheeTah to navigate to pii HTML page directly. No more copy/paste in the URL of other article and clicking on "HTML". 
-You just need to paste pii in "Enter PII here" field and press "Go". Article will open in a new tab.
+If "Open in the same tab" flag is active then CheeTah will open article in the same tab. Otherwise, it will open it in a new tab.
 
-Once you have article page on your screen you can run the check by pressing "Run" button. |br|
-If you need to get back to the "normal" page view, click on "Refresh" button in Chrome.
+If "Run check automatically" flag is active then, if you opened the pii using CheeTah, it will run the check for you automatically (no need to run the check manually).
 
+Once you have article page on your screen you can run the check manually by pressing "Run" button.
 
+"Show full article text?" button either hides all contents of the article (except for refereneces) or shows full article. You can toggle this button to "Yes" or "No" any time (before or after check).
+
+If you need to get back to the "normal" (before-the-check) page view, click on "Refresh" button in Chrome.
 
 Functionality
 -------------
