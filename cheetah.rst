@@ -28,16 +28,15 @@ CheeTah tool interface is depicted below.
    :scale: 50%
    :alt: CheeTah Interface
 
-You can use CheeTah to navigate to pii HTML page directly. No more copy/paste in the URL of other article and clicking on "HTML".
-You just need to paste pii in "Enter PII here" field and press "Go".
+You can use CheeTah to navigate to pii HTML page directly. No more copy/paste in the URL of other article and clicking on "HTML". You just need to paste pii in "Enter PII here" field and press "Go".
 
 If "Open in the same tab" flag is active then CheeTah will open article in the same tab. Otherwise, it will open it in a new tab.
 
-If "Run check automatically" flag is active then, if you opened the pii using CheeTah, it will run the check for you automatically (no need to run the check manually).
+If you open pii pages using CheeTah, then you may like to run the check automatically whne the page is loaded. In such case you can activate "Run check automatically" flag before pressing on "Go" button. I.e. if you have "Run check automatically" flag active, specify the pii to open and press "Go", then check will be automatically launched once page is loaded.
 
-Once you have article page on your screen you can run the check manually by pressing "Run" button.
+If you prefer running check manually, then deactivate "Run check automatically" flag and use "Run" button to lauch the check.
 
-"Show full article text?" button either hides all contents of the article (except for refereneces) or shows full article. You can toggle this button to "Yes" or "No" any time (before or after check).
+"Show full article text?" toggle button either hides all contents of the article (except for refereneces) or shows full article text. You can toggle this button to "Yes" or "No" any time (before or after check).
 
 If you need to get back to the "normal" (before-the-check) page view, click on "Refresh" button in Chrome.
 
@@ -62,6 +61,7 @@ CheeTah is cheeking different parts of the paper in accordance with PMC Standard
 
 2. Affiliations
 	CheeTah checks spelling and underlines (red dashed line) suspicious words.
+	The tool also cheks whether affiliation numbers match the numbers of affiliation texts. If CheeTah finds mismatch, it highlights issues in amber. In addition, if it finds any other issues (author names without afiliation numbers, wrong order of affiliation text numbers, affiliation number in wrong format and texts without affiliaton numbers), then it will promot you with the error message marked in amber.
 
 3. Correspondence to:
 	CheeTah tries to match name(s) of author(s) in "Correspondence to:" section with list of authors in front matter. 
