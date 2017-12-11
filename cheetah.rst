@@ -32,7 +32,7 @@ You can use CheeTah to navigate to pii HTML page directly. No more copy/paste in
 
 If "Open in the same tab" flag is active then CheeTah will open article in the same tab. Otherwise, it will open it in a new tab.
 
-If you open pii pages using CheeTah, then you may like to run the check automatically whne the page is loaded. In such case you can activate "Run check automatically" flag before pressing on "Go" button. I.e. if you have "Run check automatically" flag active, specify the pii to open and press "Go", then check will be automatically launched once page is loaded.
+If you open pii pages using CheeTah, then you may like to run the check automatically when the page is loaded. To do that you can activate "Run check automatically" flag before pressing on "Go" button.
 
 If you prefer running check manually, then deactivate "Run check automatically" flag and use "Run" button to lauch the check.
 
